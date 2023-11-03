@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b36e02de39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Employee Attendance System</h1>
+    <div class="formBox">
+        <h3>Employee Attendance</h3>
+        <div class="formContant">
+           <form action="#" id="form">
+            <div class="row">
+            <div class="colLabel">
+            <label>EmployeeID</label>
+            </div>
+            <div class="colInput">
+            <input type="text" id="id" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="colLabel">
+            <label>EmployeeName</label>
+            </div>
+            <div class="colInput">
+            <input type="text" id="name" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="colLabel">
+            <label>Enrollment No</label>
+            </div>
+            <div class="colInput">
+            <input type="text" id="no" autocomplete="off" required>
+            </div>
+        </div class="row">
+        <div class="row">
+            <div class="colLabel">
+            <label>Status</label>
+            </div>
+            <div class="colInput">
+            <!-- <input type="type" id="status" autocomplete="off"> -->
+            <select id="status" required>
+                <option value="">Select status</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="add">Add</button>
+            <button id="new">New</button>
+            <button id="delete">Delete</button>
+            <button id="display">Display</button>
+        </div>
+        </form>
+     
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>EmployeeID</td>
+                    <td>EmployeeName</td>
+                    <td>Enroll</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>4523</td>
+                    <td>Gowtham</td>
+                    <td>1</td>
+                    <td>Present</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <div class="modelBox1">
+        <div class="modelTop">
+        <div>Message</div>
+        <i class="fa-solid fa-xmark"></i>
+                </div>
+        <div class="msgBox">
+            <i class="fa-solid fa-circle-info" style="color: #1662e3;"></i>           
+             <div class="msg">Record Added Successfully</div>
+        </div>
+        <button id="close">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
